@@ -88,7 +88,7 @@ fun CvEditScreen(navController: NavController,viewModel: CvViewModel) {
             Spacer(modifier = Modifier.height(8.dp))
             TextField(value = viewModel.cvData.value.slack,
                 onValueChange = { viewModel.updateEmail(it) },
-                label = { Text(text = "Email") })
+                label = { Text(text = "Slack Username") })
             Spacer(modifier = Modifier.height(8.dp))
             TextField(value = viewModel.cvData.value.location,
                 onValueChange = { viewModel.updateLocation(it) },
@@ -96,7 +96,7 @@ fun CvEditScreen(navController: NavController,viewModel: CvViewModel) {
             Spacer(modifier = Modifier.height(8.dp))
             TextField(value = viewModel.cvData.value.github,
                 onValueChange = { viewModel.updatePhone(it) },
-                label = { Text(text = "Phone") })
+                label = { Text(text = "GitHub Link") })
             Spacer(modifier = Modifier.height(8.dp))
             TextField(
                 value = viewModel.cvData.value.bio,
